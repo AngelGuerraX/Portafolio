@@ -1,0 +1,24 @@
+.hover-card {
+  position: relative;
+}
+
+.card-images {
+  position: absolute;
+  bottom: 30px; /* Inicialmente por encima */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.hover-card:hover .card-images {
+  bottom: 0px; /* Se mueve hacia la card */
+  opacity: 1;
+}
+
+.hover-img {
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
